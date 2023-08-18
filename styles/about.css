@@ -1,0 +1,97 @@
+.info-header {
+    margin-top: 10em;
+    margin-bottom: 7.2rem;
+}
+
+h1.about{
+    margin-top: 0rem;
+}
+
+p.lrg {
+    margin:0px;
+}
+
+h1.about {
+    font-size: 24px;
+    margin-right: 0px;
+    font-weight: normal;
+}
+
+p.job-title{
+    font-size: 14px;
+    margin-top: 24px;
+    margin-bottom: 52px;
+}
+
+.sm{
+    font-size: 14px;
+    margin: 0px;
+}
+
+.section.contact {
+    padding: 90px 0;
+}
+
+.top-border {
+    border-top: 1px solid #000;
+}
+
+.labels {
+    width: 100%;
+    position: absolute;
+    bottom: calc(100% + 12px);
+    left: 0;
+}
+
+.labels p {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+section {
+    position: relative;
+}
+
+section.contact {
+    padding: 55px 0;
+}
+
+footer {
+    padding: 1rem 0;
+}
+
+@media(min-width:426px) {
+    h1.about {
+        font-size: 24px;
+        margin-right: 0px;
+        font-weight: normal;
+    }
+    p.lrg {
+        font-size: 20px;
+        font-weight: normal;
+        padding: 0px;
+    }
+}
+
+@media(min-width:768px) {
+    h1 {
+        font-size: 45px;
+        font-weight: normal;
+    }
+
+   
+}
+@media(min-width:993px) {
+    h1.about,
+    p.lrg {
+        font-size: 43px;
+        font-weight: normal;
+        padding: 0px;
+    }
+
+    section.contact {
+        padding: 80px 0;
+    }
+
+    
+}
