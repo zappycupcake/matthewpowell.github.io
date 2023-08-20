@@ -2,17 +2,17 @@ header {
     padding: 21px 0;
 }
 
-a{
+a {
     color: #000;
     transition: 0.3s;
+    text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: #6e6e6e;
 }
 
 .hero-section {
-    height: 100vh;
     width: 100%;
     display: flex;
     -webkit-box-orient: vertical;
@@ -27,10 +27,9 @@ a:hover{
 }
 
 .hero-header {
-    height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content:start;
+    justify-content: start;
     padding-top: 48px;
 }
 
@@ -40,6 +39,16 @@ a:hover{
     position: relative;
     transition: opacity 0.7s ease-out;
 }
+
+.landing img {
+    margin: 16px 0;
+}
+
+.carousel {
+    text-align: center;
+    width: 100vw;
+}
+
 
 .icon-arrow-down {
     width: 100%;
@@ -138,6 +147,18 @@ p.nav-contact {
     font-size: 14px;
 }
 
+/* lazy load */
+
+
+.lazy {
+    opacity: 0;
+}
+
+.entered {
+    animation: fadeIn 2s;
+    opacity: 1;
+}
+
 
 /* project screen */
 
@@ -233,7 +254,7 @@ p.nav-contact {
 
 /* images */
 
-.border{
+.border {
     border-radius: 16px;
 }
 
@@ -262,7 +283,7 @@ p.nav-contact {
     display: none;
 }
 
-.show-mob{
+.show-mob {
     display: block;
 }
 
@@ -275,13 +296,18 @@ p.nav-contact {
         padding-top: 100px;
     }
 
-  
+    .landing img {
+        margin: 24px 0;
+    }
+
+
 }
+
 @media(min-width:993px) {
 
-    .show-mob{
+    .show-mob {
         display: none;
-        }
+    }
 
     #hero-navigation {
         width: 60px;
@@ -305,7 +331,7 @@ p.nav-contact {
     }
 
     .hero-header {
-        height: 100vh;
+        /* height: 100vh; */
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -324,4 +350,25 @@ p.nav-contact {
         padding-bottom: 288px;
         padding-top: 150px;
     }
+}
+
+/* 
+flickity */
+
+ul.hero-carousel {
+    padding: 0px;
+}
+
+/* flickity-fade */
+
+.flickity-enabled.is-fade .flickity-slider>* {
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0 !important;
+}
+
+.flickity-enabled.is-fade .flickity-slider>.is-selected {
+    pointer-events: auto;
+    z-index: 1;
+    opacity: 1 !important;
 }

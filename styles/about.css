@@ -73,14 +73,7 @@ footer {
     }
 }
 
-@media(min-width:768px) {
-    h1 {
-        font-size: 45px;
-        font-weight: normal;
-    }
 
-   
-}
 @media(min-width:993px) {
     h1.about,
     p.lrg {

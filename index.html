@@ -14,35 +14,25 @@
     <link rel="stylesheet" href="styles/navigation.css">
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-
 </head>
+
 <style>
-    .landing img {
-        margin: 16px 0;
-    }
+   
 
-    .lazy {
-        opacity: 0;
-    }
 
-    .entered {
-        animation: fadeIn 2s;
-        opacity: 1;
-    }
 
-    @media(min-width:426px) {}
-
-    @media(min-width:768px) {
-
-        .landing img {
-            margin: 24px 0;
-        }
-    }
-
-    @media(min-width:993px) {}
 </style>
+
+
+
+
+
+
+
 
 <body class="landing">
     <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
@@ -68,7 +58,10 @@
 
         </defs>
     </svg>
+
+
     <main>
+
         <div class="content">
             <header>
                 <div class="container header-nav">
@@ -95,12 +88,11 @@
                             </p>
                         </div>
                         <div class="col col__2--lg fade-up-sm">
-                            <p class="nav-contact text-right">Information</p>
+                            <p class="nav-contact text-right"><a href="about.html">Information</a></p>
                         </div>
                     </div>
                 </div>
             </header>
-
 
             <div class="full-nav">
                 <ul class="project-list">
@@ -110,44 +102,58 @@
                     <li><a href="#anchor-4">Project 4</a></li>
                 </ul>
                 <a class="works-list-link works-list-close" href="javascript:;">
-
                     <svg class="close-icon">
                         <use xlink:href="#close-icon"></use>
                     </svg></a>
-                <!-- reinstate if arrow doesn't work -->
-                <!-- <svg viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M8.51201 10.9674L8.33523 10.7914L8.15884 10.9678L3.56587 15.5607C3.15324 15.9734 2.70255 16.1149 2.28515 16.0875C1.86127 16.0598 1.45189 15.856 1.13907 15.5432C0.826211 15.2303 0.622286 14.8207 0.593399 14.3977C0.564957 13.9811 0.704488 13.5334 1.11149 13.1264L5.72452 8.51337L5.90168 8.33621L5.72413 8.15943L1.11245 3.56781C1.11224 3.56759 1.11202 3.56737 1.1118 3.56716C0.704492 3.15504 0.564947 2.70454 0.593402 2.28676C0.622304 1.86242 0.826272 1.45284 1.13907 1.14004C1.45186 0.827249 1.86144 0.62328 2.28578 0.594379C2.70356 0.565924 3.15406 0.705469 3.56618 1.11278C3.5664 1.113 3.56662 1.11321 3.56684 1.11343L8.15846 5.72511L8.33523 5.90266L8.5124 5.7255L13.1254 1.11246C13.5324 0.705465 13.9802 0.565934 14.3967 0.594376C14.8197 0.623262 15.2293 0.827187 15.5422 1.14004C15.855 1.45287 16.0588 1.86225 16.0866 2.28613C16.1139 2.70353 15.9724 3.15422 15.5598 3.56684L10.9668 8.15982L10.7904 8.33621L10.9664 8.51299L15.5594 13.126L15.5594 13.126L15.5607 13.1274C15.9725 13.5347 16.1139 13.9824 16.0866 14.3983C16.0588 14.8209 15.8551 15.2303 15.5422 15.5432C15.2293 15.8561 14.8199 16.0598 14.3973 16.0875C13.9814 16.1149 13.5337 15.9735 13.1264 15.5617L13.125 15.5603L8.51201 10.9674Z"
-                            fill="#ACB0B7" stroke="#ACB0B7" stroke-width="0.5"></path>
-                    </svg> -->
                 </a>
             </div>
+
             <section class="hero-section">
                 <div class="container">
                     <div class="hero-header">
                         <div class="row" id="nw">
                             <div class="col col__12--lg col__10--md">
-                                <h1 class="hero headline">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                <h1 class="hero headline fade-up-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                                     do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                                     nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h1>
                             </div>
                         </div>
-                        <!-- <div class="row">
-                            <div class="col col__5--lg">
-                                <div id="hero-navigation">
-                                    <div class="icon-arrow-down" id="btn-skip-hero" data-scroll-target="#page-content">
-                                        <svg viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path class="circle"
-                                                d="M20.8839 10.8839C21.372 10.3957 21.372 9.60427 20.8839 9.11612L12.9289 1.16117C12.4408 0.67301 11.6493 0.67301 11.1612 1.16117C10.673 1.64932 10.673 2.44078 11.1612 2.92893L18.2322 10L11.1612 17.0711C10.673 17.5592 10.673 18.3507 11.1612 18.8388C11.6493 19.327 12.4408 19.327 12.9289 18.8388L20.8839 10.8839ZM0 11.25H20V8.75H0V11.25Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
+            </section>
+            <section>
+
+                <style>
+                    ul.hero-carousel {
+                        padding: 0px;
+                    }
+
+                    /* flickity-fade */
+
+                    .flickity-enabled.is-fade .flickity-slider>* {
+                        pointer-events: none;
+                        z-index: 0;
+                        opacity: 0 !important;
+                    }
+
+                    .flickity-enabled.is-fade .flickity-slider>.is-selected {
+                        pointer-events: auto;
+                        z-index: 1;
+                        opacity: 1 !important;
+                    }
+                </style>
+
+                <ul class="hero-carousel">
+                    <li style="width: 100vw; height: 800px;background-color: aqua;"></li>
+                    <li style="width: 100vw; height: 800px;background-color:pink;"></li>
+                    <li style="width: 100vw; height: 800px;background-color: aqua;"></li>
+                    <li style="width: 100vw; height: 800px;background-color:bisque"></li>
+                    <li style="width: 100vw; height: 800px;background-color: rebeccapurple;"></li>
+                </ul>
+
+
+
             </section>
 
 
@@ -223,14 +229,17 @@
                                         class="img-responsive lazy">
                                 </div>
                             </div>
+
+                            <!-- Additional grid - possibitlity  -->
                             <!-- <div class="row">
-                                <div class="col col__6--lg">
-                                    <img src="img/image.jpg" class="img-responsive border lazy"" class="img-responsive lazy">
-                                </div>
-                                <div class="col col__6--lg">
-                                    <img src="img/image.jpg" class="img-responsive border lazy"" class="img-responsive lazy">
-                                </div>
-                            </div> -->
+                                    <div class="col col__6--lg">
+                                        <img src="img/image.jpg" class="img-responsive border lazy"" class="img-responsive lazy">
+                                    </div>
+                                    <div class="col col__6--lg">
+                                        <img src="img/image.jpg" class="img-responsive border lazy"" class="img-responsive lazy">
+                                    </div>
+                                </div> -->
+
                         </div>
                     </section>
 
@@ -361,6 +370,21 @@
                 </div>
 
             </div>
+
+            <style>
+                .whatevs {
+                    visibility: hidden !important;
+                    opacity: 0 !important;
+                    transition: visibility 0s 2s, opacity 0.08s linear !important;
+                }
+    
+                .whatevs-1 {
+                    visibility: inherit !important;
+                    opacity: 1 !important;
+                    transition: visibility 0s 2s, opacity 0.08s linear !important;
+                }
+            </style>
+
             <footer class="top-border">
                 <div class="container">
                     <div class="row">
@@ -374,210 +398,195 @@
                 </div>
             </footer>
         </div>
+    </main>
 
-        <style>
-            .whatevs {
-                visibility: hidden !important;
-                opacity: 0 !important;
-                transition: visibility 0s 2s, opacity 0.08s linear !important;
-            }
-
-            .whatevs-1 {
-                visibility: inherit !important;
-                opacity: 1 !important;
-                transition: visibility 0s 2s, opacity 0.08s linear !important;
-            }
-        </style>
-
-        <script>
-
-            $(document).ready(function () {
-
-                // top nav
-
-                $(".about").click(function () {
-                    event.preventDefault();
-                    $(this).find("info");
-                    $(".info").addClass("info-opened");
-                    $(this).find("body");
-                    $(".landing").addClass("overflow-hidden");
-                });
-
-                $(".work").click(function () {
-
-                    $(this).find("info");
-                    $(".info").removeClass("info-opened");
-                    $(".landing").removeClass("overflow-hidden");
-                    event.preventDefault();
-                });
-
-                $(".works-list-link").click(function () {
-                    $(this).toggleClass("active");
-                    $(".full-nav").toggleClass("opened");
-                    $(".works-list-close").toggleClass("opened");
-                    $(this).find("body");
-                    $(".landing").toggleClass("overflow-hidden");
-                });
-
-                $(".full-nav").click(function () {
-                    $(this).find(".works-list-link a");
-                    $(".full-nav").removeClass("opened");
-                    $(".works-list-close").removeClass("opened");
-                    $(this).find("body");
-                    $(".landing").removeClass("overflow-hidden");
-
-                });
+    <script>
 
 
+        $(document).ready(function () {
 
-                $(window).scroll(function () {
-                    var scroll = $(window).scrollTop();
-                    if ($(window).scrollTop() + $(window).height() > ($(document).height() - 200)) {
-                        $(".toolbar-navigation").addClass("whatevs");
-                        $(".toolbar-navigation").removeClass("whatevs-1");
-                    } else {
-                        $(".toolbar-navigation").removeClass("whatevs");
-                        $(".toolbar-navigation").addClass("whatevs-1");
-                    }
-                });
+            // top nav
 
-                // jQuery(document).ready(function ($) {
-                //     $(window).on('scroll', function () {
-                //         if ($(window).scrollTop() >= $('#element').offset().top) {
-                //             $('.menu').addClass('addclass');
-                //         }
-                //         else {
-                //             $('.menu').toggleClass('addclass');
-                //             //or use $('.menu').removeClass('addclass');
-                //         }
-                //     });
-                // });
+            $(".about").click(function () {
+                event.preventDefault();
+                $(this).find("info");
+                $(".info").addClass("info-opened");
+                $(this).find("body");
+                $(".landing").addClass("overflow-hidden");
+            });
 
+            $(".work").click(function () {
 
+                $(this).find("info");
+                $(".info").removeClass("info-opened");
+                $(".landing").removeClass("overflow-hidden");
+                event.preventDefault();
+            });
 
-                $(document).on('click', 'a[href^="#"]', function (event) {
-                    event.preventDefault();
+            $(".works-list-link").click(function () {
+                $(this).toggleClass("active");
+                $(".full-nav").toggleClass("opened");
+                $(".works-list-close").toggleClass("opened");
+                $(this).find("body");
+                $(".landing").toggleClass("overflow-hidden");
+            });
 
-                    $('html, body').animate({
-                        scrollTop: $($.attr(this, 'href')).offset().top
-                    }, 500);
-                });
+            $(".full-nav").click(function () {
+                $(this).find(".works-list-link a");
+                $(".full-nav").removeClass("opened");
+                $(".works-list-close").removeClass("opened");
+                $(this).find("body");
+                $(".landing").removeClass("overflow-hidden");
 
             });
 
-            $(function () {
 
-                var pagePositon = 0,
-                    sectionsSeclector = 'section',
-                    $scrollItems = $(sectionsSeclector),
-                    offsetTolorence = 30,
-                    pageMaxPosition = $scrollItems.length - 1;
 
-                //Map the sections:
-                $scrollItems.each(function (index, ele) { $(ele).attr("project", index).data("pos", index); });
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if ($(window).scrollTop() + $(window).height() > ($(document).height() - 200)) {
+                    $(".toolbar-navigation").addClass("whatevs");
+                    $(".toolbar-navigation").removeClass("whatevs-1");
+                } else {
+                    $(".toolbar-navigation").removeClass("whatevs");
+                    $(".toolbar-navigation").addClass("whatevs-1");
+                }
+            });
 
-                // Bind to scroll
-                $(window).bind('scroll', upPos);
+         $(document).on('click', 'a[href^="#"]', function (event) {
+                event.preventDefault();
 
-                //Move on click:
-                $('#arrow a').click(function (e) {
-                    event.preventDefault()
-                    if ($(this).hasClass('next') && pagePositon + 1 <= pageMaxPosition) {
-                        pagePositon++;
-                        $('html, body').stop().animate({
-                            scrollTop: $scrollItems.eq(pagePositon).offset().top
-                        }, 300);
+                $('html, body').animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                }, 500);
+            });
 
-                    }
-                    if ($(this).hasClass('previous') && pagePositon - 1 >= 0) {
-                        pagePositon--;
-                        $('html, body').stop().animate({
-                            scrollTop: $scrollItems.eq(pagePositon).offset().top
-                        }, 300);
-                        return false;
+        });
 
-                    }
+        $(function () {
 
-                });
+            var pagePositon = 0,
+                sectionsSeclector = 'section',
+                $scrollItems = $(sectionsSeclector),
+                offsetTolorence = 30,
+                pageMaxPosition = $scrollItems.length - 1;
 
-                //Update position func:
-                function upPos() {
-                    var fromTop = $(this).scrollTop();
-                    var $cur = null;
-                    $scrollItems.each(function (index, ele) {
-                        if ($(ele).offset().top < fromTop + offsetTolorence) $cur = $(ele);
-                    });
-                    if ($cur != null && pagePositon != $cur.data('pos')) {
-                        pagePositon = $cur.data('pos');
-                    }
+            //Map the sections:
+            $scrollItems.each(function (index, ele) { $(ele).attr("project", index).data("pos", index); });
+
+            // Bind to scroll
+            $(window).bind('scroll', upPos);
+
+            //Move on click:
+            $('#arrow a').click(function (e) {
+                event.preventDefault()
+                if ($(this).hasClass('next') && pagePositon + 1 <= pageMaxPosition) {
+                    pagePositon++;
+                    $('html, body').stop().animate({
+                        scrollTop: $scrollItems.eq(pagePositon).offset().top
+                    }, 300);
+
+                }
+                if ($(this).hasClass('previous') && pagePositon - 1 >= 0) {
+                    pagePositon--;
+                    $('html, body').stop().animate({
+                        scrollTop: $scrollItems.eq(pagePositon).offset().top
+                    }, 300);
+                    return false;
+
                 }
 
             });
 
-            var lazyLoadInstance = new LazyLoad({
-                // Your custom settings go here
-            });
+            //Update position func:
+            function upPos() {
+                var fromTop = $(this).scrollTop();
+                var $cur = null;
+                $scrollItems.each(function (index, ele) {
+                    if ($(ele).offset().top < fromTop + offsetTolorence) $cur = $(ele);
+                });
+                if ($cur != null && pagePositon != $cur.data('pos')) {
+                    pagePositon = $cur.data('pos');
+                }
+            }
 
-            ! function (t) {
-                t.fn.visible = function (e) {
-                    var s = t(this),
-                        i = t(window),
-                        o = i.scrollTop(),
-                        n = o + i.height(),
-                        a = s.offset().top,
-                        l = a + s.height();
-                    return (!0 === e ? a : l) <= n && (!0 === e ? l : a) >= o
-                },
-                    t(document).ready((function () {
+        });
+
+        var lazyLoadInstance = new LazyLoad({
+            // Your custom settings go here
+        });
+        ! function (t) {
+            t.fn.visible = function (e) {
+                var s = t(this),
+                    i = t(window),
+                    o = i.scrollTop(),
+                    n = o + i.height(),
+                    a = s.offset().top,
+                    l = a + s.height();
+                return (!0 === e ? a : l) <= n && (!0 === e ? l : a) >= o
+            },
+                t(document).ready((function () {
 
 
-                        function s(t) {
-                            for (let e = t.length - 1; e > 0; e--) {
-                                const s = Math.floor(Math.random() * (e + 1));
-                                [t[e], t[s]] = [t[s], t[e]]
-                            }
+                    function s(t) {
+                        for (let e = t.length - 1; e > 0; e--) {
+                            const s = Math.floor(Math.random() * (e + 1));
+                            [t[e], t[s]] = [t[s], t[e]]
                         }
+                    }
 
 
-                        var o = ["pos-1", "pos-2", "pos-3", "pos-4"];
-                        t(".zapp").hover((function () {
+                    var o = ["pos-1", "pos-2", "pos-3", "pos-4"];
+                    t(".zapp").hover((function () {
+                        s(o);
+                        for (let e = 0; e < o.length; e += 1) {
+                            t(".zapp .letter:nth-child(" + (e + 1) + ")").removeClass("pos-1 pos-2 pos-3 pos-4").addClass(o[e])
+                        }
+                        i = setInterval((function () {
                             s(o);
                             for (let e = 0; e < o.length; e += 1) {
                                 t(".zapp .letter:nth-child(" + (e + 1) + ")").removeClass("pos-1 pos-2 pos-3 pos-4").addClass(o[e])
                             }
-                            i = setInterval((function () {
-                                s(o);
-                                for (let e = 0; e < o.length; e += 1) {
-                                    t(".zapp .letter:nth-child(" + (e + 1) + ")").removeClass("pos-1 pos-2 pos-3 pos-4").addClass(o[e])
-                                }
-                            }), 1e3)
-                        }), (function () {
-                            clearInterval(i)
-                        })), setTimeout((function () {
-                            s(o);
-                            for (let e = 0; e < o.length; e += 1) {
-                                t(".zapp .letter:nth-child(" + (e + 1) + ")").removeClass("pos-1 pos-2 pos-3 pos-4").addClass(o[e])
-                            }
-                        }), 800);
+                        }), 1e3)
+                    }), (function () {
+                        clearInterval(i)
+                    })), setTimeout((function () {
+                        s(o);
+                        for (let e = 0; e < o.length; e += 1) {
+                            t(".zapp .letter:nth-child(" + (e + 1) + ")").removeClass("pos-1 pos-2 pos-3 pos-4").addClass(o[e])
+                        }
+                    }), 800);
 
-                    }))
-            }(jQuery);
+                }))
+        }(jQuery);
 
-            ScrollReveal().reveal(".fade-up-sm", {
-                duration: 1000,
-                origin: "bottom",
-                distance: "20px",
-                easing: "ease-in-out",
+        ScrollReveal().reveal(".fade-up-sm", {
+                    duration: 1000,
+                    origin: "bottom",
+                    distance: "20px",
+                    easing: "cubic-bezier(.22,.13,.25,1)",
+                    delay: 300,
+                    interval: 100
+                });
+
+
+        $(document).ready(function () {
+            new Flickity("ul.hero-carousel", {
+                cellAlign: "left",
+                contain: true,
+                autoPlay: 900,
+                fade: true,
+                draggable: false,
+                pageDots: false,
+                prevNextButtons: false,
+                pauseAutoPlayOnHover: false
             });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
+    <script src=" https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
 
-            ScrollReveal().reveal(".headline", {
-                duration: 1030,
-                origin: "bottom",
-                distance: "20px",
-                easing: "ease-in-out",
-            });
-        </script>
-    </main>
+
 </body>
 
 </html>

@@ -77,7 +77,6 @@ ul.project-list li a {
     h1 {
         font-size: 24px;
         margin-right: 0px;
-        font-weight: normal;
     }
     ul.project-list li a {
         text-decoration: none;
@@ -87,18 +86,24 @@ ul.project-list li a {
 }
 
 @media(min-width:768px) {
+
     h1 {
-        font-size: 45px;
+        font-size: 36px;
+        margin-top: 0rem;
+        margin-bottom: 4rem;
+        margin-right: 0px;
         font-weight: normal;
+    }
+
+
+    h4 {
+        font-size: 36px;
     }
 
     P {
         font-size: 20px;
     }
 
-    h4 {
-        font-size: 36px;
-    }
 
     ul.project-list li a {
         text-decoration: none;
@@ -108,12 +113,12 @@ ul.project-list li a {
 }
 
 @media(min-width:993px) {
-    h1.hero {
+    h1{
         font-size: 43px;
         margin-top: 0rem;
-        margin-bottom: 0px;
-        margin-right: 255px;
+        margin-bottom: 4rem;
         font-weight: normal;
+        margin-right: 150px;
     }
     
 
