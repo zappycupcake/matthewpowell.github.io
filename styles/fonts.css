@@ -35,6 +35,7 @@ P {
 ul.project-list {
     list-style-type: none;
     padding: 0px;
+    text-align: center;
 }
 
 ul.project-list li a {
