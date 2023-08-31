@@ -17,6 +17,10 @@ a:hover {
     margin: 0px 0px;
 }
 
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
 .hero-section {
     width: 100%;
     display: flex;
