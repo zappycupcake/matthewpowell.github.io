@@ -20,7 +20,7 @@ h1.about {
 p.job-title{
     font-size: 14px;
     margin-top: 24px;
-    margin-bottom: 52px;
+    margin-bottom: 24px;
 }
 
 .sm{
@@ -39,7 +39,7 @@ p.job-title{
 .labels {
     width: 100%;
     position: absolute;
-    bottom: calc(100% + 12px);
+    bottom: calc(100% + 8px);
     left: 0;
 }
 
