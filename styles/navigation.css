@@ -44,8 +44,12 @@ ul.menu .nav-bubble a span:not(:last-child) {
     align-items: flex-end;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: end;
     padding-top: 100vh;
+    -webkit-justify-content: flex-end;
+    -webkit-align-items: flex-end;
+    justify-content: flex-end;
+    -webkit-box-pack: flex-end;
+    -ms-flex-pack: flex-end;
 }
 
 .nav-bar.toolbar-navigation {

@@ -444,3 +444,19 @@
     }
 
 }
+
+/* justify content */
+
+.justify-end{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-justify-content: flex-end;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    justify-content: flex-end;
+    display: flex;
+    -webkit-box-pack: flex-end;
+    -ms-flex-pack: flex-end;
+    justify-content: flex-end;
+}
+
