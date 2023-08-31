@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+    <link rel="shortcut icon" type="image/x-icon" href="https://zappycupcake.github.io/matthewpowell.github.io/favicon.ico">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -21,29 +21,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
 <style>
+    @media (min-width: 639px) {
+        .nav-bar.toolbar-navigation {
+            width: 46px;
+        }
+    }
 
-@media (min-width: 639px){
-.nav-bar.toolbar-navigation {
-    width: 46px;
-}
-}
-@media (min-width: 639px){
-.toolbar {
-    height: 46px;
-    bottom: 20px;
-}
-.toolbar-bubblee {
-    width: 36px;
-    height: 36px;
-}
-}
+    @media (min-width: 639px) {
+        .toolbar {
+            height: 46px;
+            bottom: 20px;
+        }
+
+        .toolbar-bubblee {
+            width: 36px;
+            height: 36px;
+        }
+    }
 </style>
 
 <body class="landing">
@@ -302,140 +302,9 @@
                 </div>
             </footer>
 
-
-            <style>
-                .animated {
-                    opacity: 0;
-                    transition: opacity 0.7s cubic-bezier(0.19, 1, 0.22, 1), visibility 0.7s cubic-bezier(0.19, 1, 0.22, 1);
-                }
-
-                .something {
-                    transition: opacity 0.7s cubic-bezier(0.19, 1, 0.22, 1), visibility 0.7s cubic-bezier(0.19, 1, 0.22, 1);
-                    opacity: 1;
-                }
-            </style>
-            <script>
-
-                $(document).ready(function () {
-
-                    // top nav
-
-                    $(".about").click(function () {
-                        event.preventDefault();
-                        $(this).find("info");
-                        $(".info").addClass("info-opened");
-                        $(this).find("body");
-                        $(".landing").addClass("overflow-hidden");
-                    });
-
-                    $(".work").click(function () {
-
-                        $(this).find("info");
-                        $(".info").removeClass("info-opened");
-                        $(".landing").removeClass("overflow-hidden");
-                        event.preventDefault();
-                    });
-
-                    $(".works-list-link").click(function () {
-                        $(this).toggleClass("active");
-                        $(".full-nav").toggleClass("opened");
-                        $(".works-list-close").toggleClass("opened");
-                        $(this).find("body");
-                        $(".landing").toggleClass("overflow-hidden");
-                    });
-
-                    $(".full-nav").click(function () {
-                        $(this).find(".works-list-link a");
-                        $(".full-nav").removeClass("opened");
-                        $(".works-list-close").removeClass("opened");
-                        $(this).find("body");
-                        $(".landing").removeClass("overflow-hidden");
-
-                    });
-
-
-
-                    $(window).scroll(function () {
-                        var scroll = $(window).scrollTop();
-                        if ($(window).scrollTop() + $(window).height() > ($(document).height() - 200)) {
-                            $(".toolbar-navigation").addClass("whatevs");
-                            $(".toolbar-navigation").removeClass("whatevs-1");
-                        } else {
-                            $(".toolbar-navigation").removeClass("whatevs");
-                            $(".toolbar-navigation").addClass("whatevs-1");
-                        }
-                    });
-
-
-                    $(document).on('click', 'a[href^="#"]', function (event) {
-                        event.preventDefault();
-
-                        $('html, body').animate({
-                            scrollTop: $($.attr(this, 'href')).offset().top
-                        }, 500);
-                    });
-
-                });
-
-                var lazyLoadInstance = new LazyLoad({
-                    // Your custom settings go here
-                });
-
-                ! function (t) {
-                    t.fn.visible = function (e) {
-                        var s = t(this),
-                            i = t(window),
-                            o = i.scrollTop(),
-                            n = o + i.height(),
-                            a = s.offset().top,
-                            l = a + s.height();
-                        return (!0 === e ? a : l) <= n && (!0 === e ? l : a) >= o
-                    },
-                        t(document).ready((function () {
-
-
-                            function s(t) {
-                                for (let e = t.length - 1; e > 0; e--) {
-                                    const s = Math.floor(Math.random() * (e + 1));
-                                    [t[e], t[s]] = [t[s], t[e]]
-                                }
-                            }
-
-
-                            var o = ["pos-1", "pos-2", "pos-3", "pos-4"];
-                            t(".zapp").hover((function () {
-                                s(o);
-                                for (let e = 0; e < o.length; e += 1) {
-                                    t(".zapp .letter:nth-child(" + (e + 1) + ")").removeClass("pos-1 pos-2 pos-3 pos-4").addClass(o[e])
-                                }
-                                i = setInterval((function () {
-                                    s(o);
-                                    for (let e = 0; e < o.length; e += 1) {
-                                        t(".zapp .letter:nth-child(" + (e + 1) + ")").removeClass("pos-1 pos-2 pos-3 pos-4").addClass(o[e])
-                                    }
-                                }), 1e3)
-                            }), (function () {
-                                clearInterval(i)
-                            })), setTimeout((function () {
-                                s(o);
-                                for (let e = 0; e < o.length; e += 1) {
-                                    t(".zapp .letter:nth-child(" + (e + 1) + ")").removeClass("pos-1 pos-2 pos-3 pos-4").addClass(o[e])
-                                }
-                            }), 800);
-
-                        }))
-                }(jQuery);
-
-                ScrollReveal().reveal(".fade-up-sm", {
-                    duration: 1000,
-                    origin: "bottom",
-                    distance: "20px",
-                    easing: "cubic-bezier(.22,.13,.25,1)",
-                    delay: 300,
-                    interval: 100
-                });
-            </script>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 
 </html>

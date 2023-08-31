@@ -52,6 +52,18 @@ ul.menu .nav-bubble a span:not(:last-child) {
     -ms-flex-pack: flex-end;
 }
 
+.toolbar-out {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    transition: visibility 0s 2s, opacity 0.08s linear !important;
+}
+
+.toolbar-in {
+    visibility: inherit !important;
+    opacity: 1 !important;
+    transition: visibility 0s 2s, opacity 0.08s linear !important;
+}
+
 .toolbar {
     height: 46px;
     bottom: 20px;

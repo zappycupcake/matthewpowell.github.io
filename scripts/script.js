@@ -40,15 +40,15 @@ $(document).ready(function () {
 	$(window).scroll(function () {
 		var scroll = $(window).scrollTop();
 		if ($(window).scrollTop() + $(window).height() > ($(document).height() - 200)) {
-			$(".toolbar-navigation").addClass("whatevs");
-			$(".toolbar-navigation").removeClass("whatevs-1");
+			$(".toolbar-navigation").addClass("toolbar-out");
+			$(".toolbar-navigation").removeClass("toolbar-in");
 		} else {
-			$(".toolbar-navigation").removeClass("whatevs");
-			$(".toolbar-navigation").addClass("whatevs-1");
+			$(".toolbar-navigation").removeClass("toolbar-out");
+			$(".toolbar-navigation").addClass("toolbar-in");
 		}
 	});
 
- $(document).on('click', 'a[href^="#"]', function (event) {
+	$(document).on('click', 'a[href^="#"]', function (event) {
 		event.preventDefault();
 
 		$('html, body').animate({
@@ -156,17 +156,18 @@ var lazyLoadInstance = new LazyLoad({
 }(jQuery);
 
 ScrollReveal().reveal(".fade-up-sm", {
-			duration: 1000,
-			origin: "bottom",
-			distance: "20px",
-			easing: "cubic-bezier(.22,.13,.25,1)",
-			delay: 300,
-			interval: 100
-		});
+	duration: 1000,
+	origin: "bottom",
+	distance: "20px",
+	easing: "cubic-bezier(.22,.13,.25,1)",
+	delay: 300,
+	interval: 100
+});
 
 
 $(document).ready(function () {
 	new Flickity("ul.hero-carousel", {
+		lazyLoad: true,
 		cellAlign: "left",
 		contain: true,
 		autoPlay: 900,
