@@ -170,7 +170,7 @@ $(document).ready(function () {
 		lazyLoad: true,
 		cellAlign: "left",
 		contain: true,
-		autoPlay: 900,
+		autoPlay: 1100,
 		fade: true,
 		draggable: false,
 		pageDots: false,
