@@ -35,7 +35,7 @@ ul.menu .nav-bubble a span:not(:last-child) {
 .nav-bar-container {
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -52,8 +52,14 @@ ul.menu .nav-bubble a span:not(:last-child) {
     -ms-flex-pack: flex-end;
 }
 
+.toolbar {
+    height: 46px;
+    bottom: 20px;
+}
+
 .nav-bar.toolbar-navigation {
-    width: 174px;
+    width: 46px;
+    height: 46px;
     background-color: #000;
     display: flex;
 
@@ -78,8 +84,8 @@ ul.menu .nav-bubble a span:not(:last-child) {
 }
 
 .nav-bar .toolbar-bubble {
-    width: 46px;
-    height: 46px;
+    width: 36px;
+    height: 36px;
     background-color: #acb0b7;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -137,7 +143,8 @@ ul.menu .nav-bubble a span:not(:last-child) {
     box-shadow: 0px 20px 40px rgba(0, 0, 0, .25);
     border-radius: 10000px;
     height: 62px;
-    right: 48px;
+    right: 24px;
+    bottom: 16px;
 }
 
 li.toolbar-bubble:nth-of-type(1) svg {
@@ -161,12 +168,6 @@ li.toolbar-bubble:nth-of-type(3) {
 
 }
 
-.nav-bar.toolbar-navigation {
-    width: 62px;
-    background-color: #000;
-    display: flex;
-
-}
 
 .nav-bar.toolbar-navigation ul .toolbar-bubble a span {
     position: relative;
@@ -184,10 +185,35 @@ li.toolbar-bubble:nth-of-type(3) {
 
 @media(min-width:768px) {
     .nav-bar.toolbar-navigation {
+        height: 62px;
         width: 174px;
         background-color: #000;
         display: flex;
 
+    }
+
+    .nav-bar {
+        height: 62px;
+        right: 48px;
+        bottom: 48px;
+    }
+
+    .nav-bar .toolbar-bubble {
+        width: 46px;
+        height: 46px;
+        background-color: #acb0b7;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: #000 !important;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
     }
 
     .nav-bar.toolbar-navigation ul {
