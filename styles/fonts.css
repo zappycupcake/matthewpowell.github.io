@@ -2,16 +2,17 @@
     font-family: 'neue_montrealregular';
     src: url('../fonts/neuemontreal-regular-webfont.eot');
     src: url('../fonts/neuemontreal-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/neuemontreal-regular-webfont.woff2') format('woff2'),
-         url('../fonts/neuemontreal-regular-webfont.woff') format('woff'),
-         url('../fonts/neuemontreal-regular-webfont.ttf') format('truetype'),
-         url('../fonts/neuemontreal-regular-webfont.svg#neue_montrealregular') format('svg');
+        url('../fonts/neuemontreal-regular-webfont.woff2') format('woff2'),
+        url('../fonts/neuemontreal-regular-webfont.woff') format('woff'),
+        url('../fonts/neuemontreal-regular-webfont.ttf') format('truetype'),
+        url('../fonts/neuemontreal-regular-webfont.svg#neue_montrealregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
-html,body {
+html,
+body {
     font-family: 'neue_montrealregular';
     color: #000;
     margin: 0px 20px;
@@ -23,9 +24,26 @@ html,body {
     height: 100%;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
+
+h1 {
+    font-size: 24px;
+    margin-top: 5rem;
+    margin-right: 0px;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 1em;
+    margin-top: 0;
+}
+
 
 
 P {
@@ -40,7 +58,7 @@ P {
     font-weight: normal;
 }
 
-.text-right{
+.text-right {
     text-align: right;
 }
 
@@ -63,19 +81,6 @@ ul.project-list li a {
     font-size: 17px;
 }
 
-h1 {
-    font-size: 24px;
-    margin-top: 5rem;
-    margin-right: 0px;
-    font-weight: normal;
-}
-
-h4 {
-    font-size: 24px;
-    font-weight: normal;
-    margin-top: 1em;
-    margin-top: 0;
-}
 
 ul.project-list li a {
     text-decoration: none;
@@ -91,6 +96,7 @@ ul.project-list li a {
         font-size: 24px;
         margin-right: 0px;
     }
+
     ul.project-list li a {
         text-decoration: none;
         font-size: 28px;
@@ -126,14 +132,14 @@ ul.project-list li a {
 }
 
 @media(min-width:993px) {
-    h1{
+    h1 {
         font-size: 38px;
         margin-top: 0rem;
         margin-bottom: 0rem;
         font-weight: normal;
         margin-right: 150px;
     }
-    
+
 
     P {
         font-size: 22px;

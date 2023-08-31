@@ -6,6 +6,7 @@ a {
     color: #000;
     transition: 0.3s;
     text-decoration: none;
+
 }
 
 a:hover {
@@ -111,13 +112,7 @@ a:hover {
 }
 
 /* navigation */
-
-/* .works-section {
-    margin-top: 144px;
-} */
-
 .work-container {
-    /* padding-bottom: 150px; */
     padding-top: 50px;
 }
 
@@ -161,7 +156,6 @@ p.nav-contact {
     animation: fadeIn 2s;
     opacity: 1;
 }
-
 
 /* project screen */
 
@@ -291,8 +285,6 @@ p.nav-contact {
 }
 
 
-@media(min-width:426px) {}
-
 @media(min-width:768px) {
     .work-container {
         /* padding-bottom: 200px; */
@@ -302,8 +294,6 @@ p.nav-contact {
     .landing img {
         margin: 24px 0;
     }
-
-
 }
 
 @media(min-width:993px) {
