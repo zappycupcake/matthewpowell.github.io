@@ -74,6 +74,26 @@ html.sr .load-hidden {
     cursor: pointer;
 }
 
+/* flickity */
+
+ul.hero-carousel {
+    padding: 0px;
+}
+
+/* flickity-fade */
+
+.flickity-enabled.is-fade .flickity-slider>* {
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0 !important;
+}
+
+.flickity-enabled.is-fade .flickity-slider>.is-selected {
+    pointer-events: auto;
+    z-index: 1;
+    opacity: 1 !important;
+}
+
 /* logo */
 
 .zapp {
