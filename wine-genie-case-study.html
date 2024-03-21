@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gad4uas.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
@@ -63,7 +64,7 @@
             <header>
                 <div class="container header-nav">
                     <div class="row" id="nw">
-                        <div class="col col__4--lg">
+                        <div class="col col__3--lg col__3__sm">
                             <div class="notranslate zapp logo">
                                 <span class="notranslate letter pos-1">Z</span>
                                 <span class="notranslate letter pos-2">A</span>
@@ -72,7 +73,7 @@
                             </div>
                         </div>
                         <div class="col col__3--lg no-mob fade-up-sm">
-                            <p class="nav-contact">Matthew Powell<br>Designer</p>
+                            <p class="nav-contact">Matthew Powell<br>Product Designer</p>
                         </div>
                         <div class="col col__3--lg no-mob fade-up-sm">
                             <p class="nav-contact"><svg class="icon icon-sm icon-arrow">
@@ -86,277 +87,392 @@
                                     style="text-decoration: none;" target="_blank">linkedin</a>
                             </p>
                         </div>
-                        <div class="col col__2--lg fade-up-sm">
+                        <div class="col col__2--lg  fade-up-sm">
+                            <p class="nav-contact text-right"><a href="index.html">Work</a></p>
+                        </div>
+                        <div class="col col__1--lg fade-up-sm">
                             <p class="nav-contact text-right"><a href="about.html">About</a></p>
                         </div>
                     </div>
                 </div>
             </header>
+            <section>
+                <ul class="hero-carousel fade-up-sm">
+                    <li><img data-flickity-lazyload="img/wg-carousel.jpg" class="img-responsive">
+                    </li>
+                </ul>
+            </section>
+            <div class="bottom-border pt-12 pb-12 projects">
+                <section>
+                    <div class="container">
+                        <div class="row padding-container" style="justify-content: space-between;">
+                            <div class="mb-4-roles col col__3--lg col__6--md col__12--sm">
+                                <p class="sm">My Roles</p>
+                                <ul class="roles">
+                                    <li>Content design</li>
+                                    <li>Wireframing</li>
+                                    <li>High fidelity designs</li>
+                                    <li>Support with build</li>
+                                    <li>User research</li>
+                                </ul>
+                            </div>
+                            <div class="mb-4-roles col col__3--lg col__6--md col__12--sm">
+                                <p class="sm">My Tools</p>
+                                <ul class="roles">
+                                    <li>Figma</li>
+                                    <li>Adobe Suite</li>
+                                    <li>Miro</li>
+                                    <li>User Zoom</li>
+                                </ul>
 
-          
-
-            <section class="hero-section">
-                <div class="container">
-                    <div class="hero-header">
-                        <div class="row justify-end" id="nw">
-                            <div class="col col__8--lg col__10--md">
-                                <h1 class="hero headline fade-up-sm">Case Study </h1>
+                            </div>
+                            <div class="mb-4-roles col col__3--lg col__6--md col__12--sm">
+                                <p class="sm">Collaboration</p>
+                                <ul class="roles">
+                                    <li>Matthew Powell - Lead Designer</li>
+                                    <li>Tony Waygood - UX Researcher</li>
+                                    <li>Ele Overvoode- Product Manager</li>
+                                    <li>Junior Rumberlow - Senior Front-End Dev</li>
+                                </ul>
+                            </div>
+                            <div class="mb-4-roles col col__3--lg col__6--md col__12--sm">
+                                <p class="sm">Research methods</p>
+                                <ul class="roles">
+                                    <li>Unmoderated Interviews</li>
+                                    <li>Number of participants: 30 (10 per variant)</li>
+                                    <li>Prospective Naked Wines customers</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <!-- <section>
-                <ul class="hero-carousel fade-up-sm">
-                    <li><img data-flickity-lazyload="img/carousel-1.jpg" class="img-responsive">
-                    </li>
-                    <li><img data-flickity-lazyload="img/carousel-3.jpg" class="img-responsive">
-                    </li>
-                    <li><img data-flickity-lazyload="img/carousel-2.jpg" class="img-responsive">
-                    </li>
-                    <li><img data-flickity-lazyload="img/carousel-4.jpg" class="img-responsive">
-                    </li>
-
-                </ul>
-            </section> -->
+            </div>
 
             <div class="works-section" style="position: relative;">
-                 <div class="work-section-inner">
-                    <div class="nav-bar-container">
-                        <div id="arrow" class="nav-bar toolbar-navigation">
-                            <ul class="menu">
-                                <li class="toolbar-bubble">
-                                    <a class="next">
-                                        <svg viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M20.8839 10.8839C21.372 10.3957 21.372 9.60427 20.8839 9.11612L12.9289 1.16117C12.4408 0.67301 11.6493 0.67301 11.1612 1.16117C10.673 1.64932 10.673 2.44078 11.1612 2.92893L18.2322 10L11.1612 17.0711C10.673 17.5592 10.673 18.3507 11.1612 18.8388C11.6493 19.327 12.4408 19.327 12.9289 18.8388L20.8839 10.8839ZM0 11.25H20V8.75H0V11.25Z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="toolbar-bubble">
-                                    <a class="works-list-link" href="javascript:;">
-                                        <span></span>
-                                        <span></span>
-                                    </a>
-                                </li>
-                                <li class="toolbar-bubble">
-                                    <a class="previous" href="javascript:;">
-                                        <svg viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M20.8839 10.8839C21.372 10.3957 21.372 9.60427 20.8839 9.11612L12.9289 1.16117C12.4408 0.67301 11.6493 0.67301 11.1612 1.16117C10.673 1.64932 10.673 2.44078 11.1612 2.92893L18.2322 10L11.1612 17.0711C10.673 17.5592 10.673 18.3507 11.1612 18.8388C11.6493 19.327 12.4408 19.327 12.9289 18.8388L20.8839 10.8839ZM0 11.25H20V8.75H0V11.25Z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
+                <div class="work-section-inner">
+                    <section>
+                        <div class="container work-container projects">
+                            <div class="row mb-14 mt-14 padding-container" id="nw"
+                                style="justify-content: space-between;">
+                                <div class="col col__3--lg col__6--md col__12--sm">
+                                    <div class="case-meta">
+                                        <p class="mb-6"><span class="project-number">01</span>About Wine Genie</p>
+                                    </div>
+                                </div>
+                                <div class="col col__5--lg col__6--md col__12--sm mb-20">
+                                    <h4 class="mb-6">Wine Genie is a personalised subscription service from Naked Wines,
+                                        offering new
+                                        customers the chance to explore new wines and regions tailored to their tastes.
+                                    </h4>
+                                    </p>
+                                    <p>Buying wine is no easy task; colour, style and country can make it a frustrating
+                                        experience for the average wine drinker. Wine Genie aims to reduce the effort
+                                        involved in the wine buying process.</p>
+                                    <p>The journey for new Wine Genie customers has already proven successful. Users
+                                        begin with a quiz, answering questions on their wine knowledge and wine
+                                        preferences. This builds their wine profile and encourages them to sign up to
+                                        Wine Genie. </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col__12--lg col-12-img">
+                                    <img src="img/wg-flow.jpg" class="img-responsive border lazy"
+                                        class="img-responsive lazy" alt="A/B Testing of New Naked Wines Branding">
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col__6--lg col__6--img">
+                                    <div class="img" style="width: 100%;
+                                position: relative;">
+                                        <img src="img/wg-quiz.jpg" class="img-responsive border lazy" style="width: 100%;
+                                    max-width: none;
+                                    border-radius: 25px " class="img-responsive lazy"
+                                            alt="A/B Testing of New Naked Wines Branding">
+                                    </div>
+                                </div>
+                                <div class="col col__6--lg col__6--img">
+                                    <div class="img" style="width: 100%;
+                                position: relative;">
+                                        <img src="img/wg-case-page.jpg" class="img-responsive border lazy" style="width: 100%;
+                                    max-width: none;
+                                    border-radius: 25px " class="img-responsive lazy"
+                                            alt="A/B Testing of New Naked Wines Branding">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="bottom-border pt-12 pb-12"></div>
+
+                    <section>
+                        <div class="container work-container projects">
+                            <div class="row mb-14 mt-14 padding-container" id="nw"
+                                style="justify-content: space-between;">
+                                <div class="col col__3--lg col__6--md col__sm--12">
+                                    <div class="case-meta">
+                                        <p class="mb-6"><span class="project-number">02</span>The problem</p>
+                                    </div>
+                                </div>
+                                <div class="col col__5--lg col__12--md col__6--md col__sm--12 mb-20">
+                                    <h4 class="mb-6">Wine Genie is working for new customers, why is it not working for
+                                        existing?
+                                    </h4>
+                                    </p>
+                                    <p>There are 1.2 million US customers who have tried Naked Wines but not continued
+                                        to buy. If they liked our wines, but struggled to know what to choose
+                                        thereafter, could Wine Genie entice these dormant customers to spend and the
+                                        become valuable LTV customers?</p>
+                                    <p>Customer interviews revealed that the existing landing page didn't explain the
+                                        Wine Genie proposition clearly enough.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col__12--lg">
+                                    <img src="img/wg-old.png" class="img-responsive border lazy"
+                                        class="img-responsive lazy" alt="A/B Testing of New Naked Wines Branding">
+
+                                </div>
+                            </div>
+                            <div class="row metrics" style="justify-content: center;">
+                                <div class="col col__3--lg col__6--sm">
+
+                                    <img src="img/Samantha.png" class="img-responsive"
+                                        style="width: 100%; max-width: none;">
+
+                                </div>
+                                <div class="col col__3--lg col__6--sm">
+
+                                    <img src="img/Brian.png" class="img-responsive"
+                                        style="width: 100%; max-width: none;">
+
+                                </div>
+                                <div class="col col__3--lg col__6--sm">
+
+                                    <img src="img/Kieran.png" class="img-responsive"
+                                        style="width: 100%; max-width: none;">
+
+                                </div>
+                                <div class="col col__3--lg col__6--sm">
+
+                                    <img src="img/nieve.png" class="img-responsive"
+                                        style="width: 100%; max-width: none;">
+
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </section>
+
+                <div class="bottom-border pt-12 pb-12"></div>
+
+                <section>
+                    <div class="container work-container projects">
+                        <div class="row mb-14 mt-14 padding-container" id="nw" style="justify-content: space-between;">
+                            <div class="col col__3--lg col__12--md">
+                                <div class="case-meta">
+                                    <p class="mb-6"><span class="project-number">03</span>Wireframing</p>
+                                </div>
+                            </div>
+                            <div class="col col__5--lg col__12--md mb-20">
+                                <h4 class="mb-6">Designing the wireframes
+                                </h4>
+                                </p>
+                                <p>If we're able to communicate the key benefits of Wine Genie clearly, can we
+                                    improve the chances of these dormant customers entering the Wine Genie quiz,
+                                    subscribing to the product and increasing their LTV?</p>
+                                <p>With a rebrand in process; I took the opportunity to incorporate the new design
+                                    elements to enhance the brand proposition and make the page visually more
+                                    appealing.</p>
+                                <p>These wireframes were created to validate the solution and encourage discussions
+                                    about the layout during user interviews. I developed three designs, each
+                                    showcasing the same content but arranged in a different hierarchy.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col__12--lg">
+                                <img src="img/wg-prototypes.jpg" class="img-responsive border lazy"
+                                    class="img-responsive lazy" alt="A/B Testing of New Naked Wines Branding">
+
+                            </div>
                         </div>
                     </div>
+                </section>
 
-                    <section id="anchor-1">
-                        <div class="container work-container projects">
-                            <div class="row mb-14 mt-14" id="nw" style="justify-content: space-between;">
-                                <div class="col col__3--lg col__12--md">
-                                    <h4 class="mb-4">Dynamic A/B Testing of New Naked Wines Branding</h4>
-                                    <div class="case-meta">
-                                        <p class="mb-6">Designer & Developer</p>
-                                    </div>
-                                </div>
-                                <div class="col col__5--lg col__12--md">
-                                    <p>This year, Naked Wines began the process of rebranding. With the need to
-                                        understand
-                                        it's impact, we rebranded an existing customer journey to A/B test.</p>
-                                    <p>With pressure to test quickly, the marketing team initially wanted to build one
-                                        page with one product. However, I saw the opportunity to build a dynamic page
-                                        across multiple products which would help us A/B test further in the future. It
-                                        also gave the digital team
-                                        autonomy; allowing them to manage the pages themselves via our CMS and freeing
-                                        up our design and tech teams. Win-win! </p>
-                                </div>
-                                <div class="col col__2--lg col__12--md">
-                                    <div class="case-meta">
-                                        <p>Figma</p>
-                                        <p>HTML</p>
-                                        <p>CSS</p>
-                                        <p>Thymeleaf</p>
-                                        <p>Looker</p>
-                                    </div>
+                <div class="bottom-border pt-12 pb-12"></div>
+
+                <section>
+                    <div class="container work-container projects">
+                        <div class="row mb-14 mt-14 padding-container" id="nw" style="justify-content: space-between;">
+                            <div class="col col__3--lg col__12--md">
+                                <div class="case-meta">
+                                    <p class="mb-6"><span class="project-number">04</span>User testing</p>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col col__12--lg">
-                                    <img src="img/seo-1.png" class="img-responsive border lazy"
-                                        class="img-responsive lazy" alt="A/B Testing of New Naked Wines Branding">
-                                    <img src="img/seo-2.png" class="img-responsive border lazy"
-                                        class="img-responsive lazy" alt="A/B Testing of New Naked Wines Branding">
-                                    <img src="img/seo-3.png" class="img-responsive border lazy"
-                                        class="img-responsive lazy" alt="A/B Testing of New Naked Wines Branding">
-                                    <img src="img/seo-4.png" class="img-responsive border lazy"
-                                        class="img-responsive lazy" alt="A/B Testing of New Naked Wines Branding">
-                                    <img src="img/seo-5.png" class="img-responsive border lazy"
-                                        class="img-responsive lazy" alt="A/B Testing of New Naked Wines Branding">
-                                    <img src="img/seo-6.png" class="img-responsive border lazy"
-                                        class="img-responsive lazy" alt="A/B Testing of New Naked Wines Branding">
-                                    <img src="img/seo-7.png" class="img-responsive border lazy"
-                                        class="img-responsive lazy" alt="A/B Testing of New Naked Wines Branding">
-                                </div>
+                            <div class="col col__5--lg col__12--md mb-20">
+                                <h4 class="mb-6">Designing the prototypes
+                                </h4>
+
+                                <p>Once the wireframes were internally critiqued and refined, I created high
+                                    fidelity versions for all three designs, focusing on mobile first before moving
+                                    onto tablet and then desktop. </p>
+                                <p>We conducted 30 customer interviews, 10 for each variant.</p>
+                                <p>From these customer interviews, we extracted some constructive insights.
+                                    Generally, they appreciated the design of the page, how easy it was to digest
+                                    the USP, trust in the product and the quality it offers.</p>
+
+                                <p style="color:#2175DC"><a
+                                        href="https://www.figma.com/proto/gQHc4c00CpwP0WG0qh2zxi/Repeat-Customer-Wine-Genie?page-id=1%3A2&type=design&node-id=13-24525&viewport=460%2C246%2C0.25&t=Zemgt0QQbv5aWEb3-1&scaling=scale-down&starting-point-node-id=13%3A24525&show-proto-sidebar=1&mode=design"
+                                        style="color:#2175DC!important;text-decoration: underline;" target="">Check out the
+                                        prototypes here</a></p>
                             </div>
                         </div>
-                    </section>
-
-                    <section id="anchor-2">
-                        <div class="container work-container projects">
-                            <div class="row mb-14 mt-14" id="nw" style="justify-content: space-between;">
-
-                                <div class="col col__3--lg col__12--md">
-                                    <h4 class="mb-4">Naked Wines<br>Advent Calendar</h4>
-                                    <div class="case-meta">
-                                        <p class="mb-6">Designer & Developer</p>
-                                    </div>
-                                </div>
-                                <div class="col col__5--lg col__12--md">
-                                    <p>Naked Wines first ever Christmas Calendar! Our competitors, Virgin Wines and
-                                        Laithwaites, had their own similar campaigns, but we wanted to produce something
-                                        that stood out and offered more.</p>
-                                    <p>24 independent winemakers offering 24 incredible wines to be opened over
-                                        December; unwrap, pour and then scan then the back of the
-                                        wine carton for more information about the winemaker and food pairings.</p>
-                                    <p>I designed and built the landing page, using existing components
-                                        from our design library.</p>
-                                    <p>The campaign was a success! We sold out within the first 24 hours of the
-                                        pre-orders going on sale.</p>
-                                </div>
-                                <div class="col col__2--lg col__12--md">
-                                    <div class="case-meta">
-                                        <p>Figma</p>
-                                        <p>Adobe Creative Suite</p>
-                                        <p>HTML/CSS/JS</p>
-                                        <p>Thymeleaf</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col col__12--lg">
-                                    <img src="img/advent-1.png" class="img-responsive border lazy"
-                                        alt="Naked Wines Advent Calendar" class="img-responsive lazy">
-                                    <img src="img/advent-2.png" class="img-responsive border lazy"
-                                        alt="Naked Wines Advent Calendar" class="img-responsive lazy">
-                                    <img src="img/advent-3.png" class="img-responsive border lazy"
-                                        alt="Naked Wines Advent Calendar" class="img-responsive lazy">
-                                    <img src="img/advent-4.png" class="img-responsive border lazy"
-                                        alt="Naked Wines Advent Calendar" class="img-responsive lazy">
-                                </div>
+                        <div class="row">
+                            <div class="col col__12--lg">
+                                <img src="img/wg-prototypes-hifi.jpg" class="img-responsive border lazy"
+                                    class="img-responsive lazy" alt="A/B Testing of New Naked Wines Branding">
                             </div>
                         </div>
-                    </section>
 
-
-                    <section id="anchor-3">
-                        <div class="container work-container projects">
-                            <div class="row mb-14 mt-14" id="nw" style="justify-content: space-between;">
-
-                                <div class="col col__3--lg col__12--md">
-                                    <h4 class="mb-4">Naked Wines Email Design System</h4>
-                                    <div class="case-meta">
-                                        <p class="mb-6">Designer & Developer</p>
-                                    </div>
-                                </div>
-                                <div class="col col__5--lg col__12--md">
-                                    <p>When I joined Naked Wines, there was a lack of parity and visual consistency
-                                        across all of our global email communication.</p>
-                                    <p>There was a clear business need to improve: the design, build quality and
-                                        accessibility of our emails. Implementing a email design system consistent with
-                                        our brand would save time and increase our email marketing output.
-                                    </p>
-                                    <p>By creating an extensive design system and defining templates, image and copy
-                                        size, I created and built a suite of flexible components that enabled us to test
-                                        across multiple email clients quickly and efficiently.</p>
-                                </div>
-                                <div class="col col__2--lg col__12--md">
-                                    <div class="case-meta">
-                                        <p>Figma</p>
-                                        <p>HTML/CSS</p>
-                                        <p>Litmus</p>
-                                    </div>
+                    </div>
+                </section>
+                <div class="bottom-border pt-12 pb-12"></div>
+                <section>
+                    <div class="container work-container projects">
+                        <div class="row mb-14 mt-14 padding-container" id="nw" style="justify-content: space-between;">
+                            <div class="col col__3--lg col__12--md">
+                                <div class="case-meta">
+                                    <p class="mb-6"><span class="project-number">05</span>Learnings</p>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col col__12--lg">
-                                    <img src="img/email-3.png" alt="Naked Wines Email Design System"
-                                        class="img-responsive border lazy" class="img-responsive lazy">
-                                    <img src="img/email-2.png" alt="Naked Wines Email Design System"
-                                        class="img-responsive border lazy" class="img-responsive lazy">
-                                    <img src="img/email-4.png" alt="Naked Wines Email Design System"
-                                        class="img-responsive border lazy" class="img-responsive lazy">
-                                    <img src="img/email-5.png" alt="Naked Wines Email Design System"
-                                        class="img-responsive border lazy" class="img-responsive lazy">
-                                    <img src="img/email-6.png" alt="Naked Wines Email Design System"
-                                        class="img-responsive border lazy" class="img-responsive lazy">
-                                    <img src="img/email-7.png" alt="Naked Wines Email Design System"
-                                        class="img-responsive border lazy" class="img-responsive lazy">
+                            <div class="col col__5--lg col__12--md mb-20">
+                                <h4 class="mb-6">Learnings and the winning variants
+                                </h4>
+                                <div class="case-meta">
+                                    <p style="color:#2175DC">Key insight 1</p>
                                 </div>
-                            </div>
-                        </div>
-                    </section>
+                                <p>Users needed to understand the 'how it works' before telling them the benefits on
+                                    order
+                                    to give to give them the confidence to take action.</p>
 
-                    <section id="anchor-4">
-                        <div class="container work-container projects">
-                            <div class="row mb-14 mt-14" id="nw" style="justify-content: space-between;">
+                                <p>When we lead with 'how it works; (V1 & V3) customers had a better understanding: “I
+                                    can
+                                    edit at any point in time. And that it will give me wines that I would enjoy based
+                                    off
+                                    my quiz.” As a result they were more likely to be open to the idea of signing up.
+                                </p>
 
-                                <div class="col col__3--lg col__12--md">
-                                    <h4 class="mb-4">Save for Christmas</h4>
-                                    <div class="case-meta">
-                                        <p class="mb-6">Designer & Developer</p>
-                                    </div>
+                                <div class="case-meta">
+                                    <p style="color:#2175DC">Key insight 2</p>
                                 </div>
-                                <div class="col col__5--lg col__12--md">
-                                    <p>Naked Wines wanted to lock customers' Christmas orders in, before the wine tax
-                                        duty increase. I designed, managed and built the campaign. The challenge here
-                                        was to clearly and concisely visually explain the payment plans and, depending
-                                        on the customer
-                                        segment, dynamically display the five different case products on offer.
-                                    </p>
-                                    <p>A huge commercial success for Naked Wines beating the forecast with 10,000+
-                                        pre-orders within the
-                                        first week.</p>
+                                <p>People understood Wine Genie fully after reading the 123 step.</p>
+
+                                <p> Simplifying the steps down to a 123 made it easier to understand. A cleaner UI
+                                    followed by concise and instructive titles helped users 'get it' much quicker.</p>
+                                <div class="case-meta">
+                                    <p style="color:#2175DC">Key insight 3</p>
                                 </div>
-                                <div class="col col__2--lg col__12--md">
-                                    <div class="case-meta">
-                                        <p>Figma</p>
-                                        <p>HTML/CSS/JS</p>
-                                        <p>Thymeleaf</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col col__12--lg">
-                                    <img src="img/SFC2.png" class="img-responsive border lazy" alt="Save for Christmas"
-                                        class="img-responsive lazy">
-                                    <img src="img/SFC1.png" class="img-responsive border lazy" alt="Save for Christmas"
-                                        class="img-responsive lazy">
-                                    <img src="img/SFC3.png" class="img-responsive border lazy" alt="Save for Christmas"
-                                        class="img-responsive lazy">
-                                    <img src="img/SFC4.png" class="img-responsive border lazy" alt="Save for Christmas"
-                                        class="img-responsive lazy">
-                                </div>
+
+                                <p>The landing pages set the tone/ brand personality for the whole experience.</p>
+
+
+                                <p>We can do this by building trust in Wine Genie through external validation, like the
+                                    USA Today award. Also through good user experience with succinct content design,
+                                    leaving customers more open to the idea signing up going into the quiz.</p>
                             </div>
                         </div>
-                    </section>
-                </div>
+                        <div class="row">
+                            <div class="col col__12--lg col-12-img">
+                                <img src="img/wg-winning-variant-mobile.png" class="img-responsive lazy border"
+                                    alt="A/B Testing of New Naked Wines Branding">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col__12--lg col-12-img">
+                                <img src="img/wg-winning-variant.png" class="img-responsive lazy border"
+                                    alt="A/B Testing of New Naked Wines Branding">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="bottom-border pt-12 pb-12"></div>
+                <section>
+                    <div class="container work-container projects">
+                        <div class="row mb-14 mt-14 padding-container" id="nw" style="justify-content: space-between;">
+                            <div class="col col__3--lg col__12--md">
+                                <div class="case-meta">
+                                    <p class="mb-6"><span class="project-number">06</span>Metrics and Success</p>
+                                </div>
+                            </div>
+                            <div class="col col__5--lg col__12--md mb-20">
+                                <h4 class="mb-6">What does success look like?</h4>
+
+                                <p>It's still earlier days, but the results speak for themselves.</p>
+
+                                <p>More copy to follow...</p>
+
+                            </div>
+                        </div>
+                        <style>
+                            .metrics {
+                                align-items: center;
+                                justify-content: center;
+                                max-width: 1240px;
+                                margin: 0 auto;
+                            }
+                        </style>
+
+                        <div class="row metrics" style="justify-content: center;">
+                            <div class="col col__3--lg col__6--sm">
+
+                                <img src="img/metric-1.png" class="img-responsive"
+                                    style="width: 100%; max-width: none;">
+
+                            </div>
+                            <div class="col col__3--lg col__6--md col__6--sm">
+
+                                <img src="img/metric-2.png" class="img-responsive"
+                                    style="width: 100%; max-width: none;">
+
+                            </div>
+                            <div class="col col__3--lg col__6--md col__6--sm">
+
+                                <img src="img/metric-3.png" class="img-responsive"
+                                    style="width: 100%; max-width: none;">
+
+                            </div>
+
+                            <div class="col col__3--lg col__6--md col__6--sm">
+
+                                <img src="img/metric-4.png" class="img-responsive"
+                                    style="width: 100%; max-width: none;">
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="top-border">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col__6--lg col__6--sm col__6--xs">
+                                <p class="sm">Matthew Powell</p>
+                            </div>
+                            <div class="col__6--lg col__6--sm col__6--xs">
+                                <p class="sm text-right">2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+
+
             </div>
-            <footer class="top-border">
-                <div class="container">
-                    <div class="row">
-                        <div class="col__6--lg col__6--sm col__6--xs">
-                            <p class="sm">Matthew Powell</p>
-                        </div>
-                        <div class="col__6--lg col__6--sm col__6--xs">
-                            <p class="sm text-right">2023</p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+        </div>
+
         </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>

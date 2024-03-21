@@ -169,6 +169,17 @@ p.nav-contact {
     font-size: 14px;
 }
 
+/* list-type */
+
+ul.roles {
+    padding: 0px;
+}
+
+ul.roles li {
+    list-style-type: none;
+    margin: 8px 0;
+}
+
 /* lazy load */
 
 
@@ -308,10 +319,14 @@ p.nav-contact {
     display: block;
 }
 
+/* img{
+    border-radius: 25px;
+} */
+
 
 @media(min-width:768px) {
     .work-container {
-        /* padding-bottom: 200px; */
+
         padding-top: 100px;
     }
 
