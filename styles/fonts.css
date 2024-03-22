@@ -137,6 +137,12 @@ ul.project-list li a {
     color: #000;
 }
 
+.project-number {
+    font-size: 24px;
+    margin-right: 16px;
+    color: #2175DC
+}
+
 
 @media(min-width:426px) {
     h1 {
@@ -150,11 +156,7 @@ ul.project-list li a {
         margin: 1.5rem 0;
     }
 
-    .project-number {
-        font-size: 24px;
-        margin-right: 16px;
-        color: #2175DC
-    }
+   
 }
 
 @media(min-width:768px) {
