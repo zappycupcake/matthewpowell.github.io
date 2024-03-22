@@ -26,10 +26,11 @@ ul.nav-contact-inline {
     list-style: none;
 }
 
+/* nav */
+
 ul.nav-contact-inline li {
     display: inline-block;
-    margin-right: 16px;
-    /* add spacing between items */
+    margin-left: 8px;
     font-size: 14px;
 }
 
@@ -362,6 +363,11 @@ ul.roles li {
 
     .landing img {
         margin: 24px 0;
+    }
+    ul.nav-contact-inline li {
+        display: inline-block;
+        margin-left: 24px;
+        font-size: 14px;
     }
 }
 
