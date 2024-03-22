@@ -21,6 +21,18 @@ html.sr .load-hidden {
     visibility: hidden;
 }
 
+ul.nav-contact-inline {
+    margin-top: 0px;
+    list-style: none;
+}
+
+ul.nav-contact-inline li {
+    display: inline-block;
+    margin-right: 16px;
+    /* add spacing between items */
+    font-size: 14px;
+}
+
 .hero-section {
     width: 100%;
     display: flex;
@@ -319,9 +331,27 @@ ul.roles li {
     display: block;
 }
 
-/* img{
-    border-radius: 25px;
-} */
+.metrics {
+    align-items: center;
+    justify-content: center;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.icon-md {
+    width: 0.7rem;
+    height: 0.7em;
+    margin-left: 8px;
+}
+
+.badge {
+    padding: 16px 24px;
+    background: #F3F3F3;
+    border-radius: 54px;
+    width: 100%;
+    font-size: 12px;
+    margin: 0px;
+}
 
 
 @media(min-width:768px) {

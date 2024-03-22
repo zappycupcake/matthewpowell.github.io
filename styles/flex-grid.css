@@ -221,7 +221,7 @@
     
 }
 
-@media(min-width:426px) {
+
 
     .mb-4-roles{
         margin-bottom: 16px!important;
@@ -337,16 +337,13 @@
         margin-bottom: 16px
     }
 
-    .projects {
-        padding-right: 24px;
-        padding-left: 24px;
-    }
+  
 
     .padding-container {
         max-width: 1500px;
         
     }
-}
+
 
 @media(min-width:768px) {
     .col__12--md {
@@ -447,6 +444,11 @@
 }
 
 @media(min-width:993px) {
+
+    .projects {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
 
     .col__12--lg {
 
